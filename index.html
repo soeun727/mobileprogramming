@@ -6,7 +6,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	alert("사용자의 정보를 조회하니, 원치않으면 사이트 끄세요..");
-	$.getJSON('http:/ipapi.co/json/',function(data) {
+	$.getJSON('https://ipapi.co/json/',function(data) {
 		var ressssult = JSON.stringify(data, null, 2);
 		console.log("userAgent: "+ userAgent);
 
@@ -24,7 +24,7 @@
 			alert("웹 뷰 환경에서만 구동 가능한 기능");
 		}
 		}
-		
+
 	</script>
 </head>
 <body>
