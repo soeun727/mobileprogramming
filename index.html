@@ -7,7 +7,9 @@
 	<script type="text/javascript">
 	alert("사용자의 정보를 조회하니, 원치않으면 사이트 끄세요..");
 	$.getJSON('https://ipapi.co/json/',function(data) {
-		var ressssult = JSON.stringify(data, null, 2);
+		var ressssault = JSON.stringify(data, null, 2);
+		console.log(ressssault);
+		var userAgent=navigator.userAgent.toLowerCase();
 		console.log("userAgent: "+ userAgent);
 
 		document.getElementById("yourIP").value = data.ip;
